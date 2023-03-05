@@ -7,5 +7,17 @@
     <string name="movie_year">2023</string>
     <string name="movie_country">US</string>
 
+    <string-array name="data_movie_name">
+        <item>Ahmad Dahlan</item>
+        <item>Ahmad Yani</item>
+        <item>Sutomo</item>
+        <item>Gatot Soebroto</item>
+        <item>Ki Hadjar Dewantara</item>
+        <item>Mohammad Hatta</item>
+        <item>Soedirman</item>
+        <item>Soekarno</item>
+        <item>Soepomo</item>
+    </string-array>
+
 
 </resources>
