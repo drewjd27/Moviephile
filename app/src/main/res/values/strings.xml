@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Moviephile</string>
+
+    <string name="heroes_name">Spider-Man: Into the Spider-Verse</string>
+    <string name="description">Spider-Man traverses parallel dimensions and teams up with Spider-Men from those dimensions to stop a threat to all realities.</string>
+    <string name="movie_duration">99 Minutes</string>
+    <string name="movie_year">2023</string>
+    <string name="movie_country">US</string>
+
+
 </resources>
