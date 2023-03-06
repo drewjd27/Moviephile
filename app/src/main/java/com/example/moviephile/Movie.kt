@@ -9,5 +9,6 @@ data class Movie(
     val movYear: String,
     val movCountry: String,
     val movDuration: String,
+    val movDescription: String,
     val movPhoto: Int
 ) : Parcelable

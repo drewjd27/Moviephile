@@ -85,7 +85,17 @@
         <item>@drawable/venom2</item>
     </integer-array>
 
-
-
+    <string-array name="data_movie_synopsis">
+        <item>Black Panther: Wakanda Forever</item>
+        <item>Jujutsu Kaisen 0</item>
+        <item>Jurassic World Dominion</item>
+        <item>Knives Out</item>
+        <item>Mission: Impossible - Fallout</item>
+        <item>No Time to Die</item>
+        <item>Spider-Man: Into the Spider-Verse</item>
+        <item>Spider-Man: No Way Home</item>
+        <item>Top Gun: Maverick</item>
+        <item>Venom: Let There Be Carnage</item>
+    </string-array>
 
 </resources>

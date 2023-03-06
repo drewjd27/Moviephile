@@ -6,8 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:layout_marginVertical="4dp"
-    android:layout_marginHorizontal="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="4dp"
     card_view:cardCornerRadius="4dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -23,7 +25,7 @@
             card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintStart_toStartOf="parent"
             card_view:layout_constraintTop_toTopOf="parent"
-            tools:src="@drawable/spiderman_its" />
+            tools:src="@tools:sample/avatars" />
 
         <TextView
             android:id="@+id/tv_movie_name"
@@ -32,9 +34,9 @@
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:layout_toEndOf="@id/img_item_photo"
-            android:textSize="20sp"
-            android:fontFamily="@font/PoppinsSemiBold"
             android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_semibold"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toEndOf="@+id/img_item_photo"
             card_view:layout_constraintTop_toTopOf="@+id/img_item_photo"
@@ -44,11 +46,12 @@
             android:id="@+id/tv_movie_year"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="4dp"
             android:layout_toEndOf="@id/img_item_photo"
-            android:fontFamily="@font/PoppinsMedium"
             android:textSize="14sp"
-            card_view:layout_constraintStart_toStartOf="@+id/tv_movie_name"
+            android:fontFamily="@font/poppins_medium"
+            card_view:layout_constraintStart_toEndOf="@+id/img_item_photo"
             card_view:layout_constraintTop_toBottomOf="@+id/tv_movie_name"
             tools:text="@string/movie_year" />
 
@@ -58,8 +61,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:layout_toEndOf="@id/img_item_photo"
-            android:fontFamily="@font/PoppinsMedium"
             android:textSize="14sp"
+            android:fontFamily="@font/poppins_medium"
             android:layout_marginStart="16dp"
             card_view:layout_constraintStart_toEndOf="@+id/tv_movie_year"
             card_view:layout_constraintTop_toBottomOf="@+id/tv_movie_name"
@@ -72,8 +75,8 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="4dp"
             android:layout_toEndOf="@id/img_item_photo"
-            android:fontFamily="@font/PoppinsMedium"
             android:textSize="14sp"
+            android:fontFamily="@font/poppins_medium"
             card_view:layout_constraintEnd_toEndOf="@+id/tv_movie_name"
             card_view:layout_constraintStart_toEndOf="@+id/tv_movie_country"
             card_view:layout_constraintTop_toBottomOf="@+id/tv_movie_name"
@@ -85,11 +88,11 @@
             android:layout_height="0dp"
             android:layout_marginTop="8dp"
             android:ellipsize="end"
-            android:maxLines="5"
             android:fontFamily="@font/poppins"
-            card_view:layout_constraintBottom_toBottomOf="@+id/img_item_photo"
+            android:maxLines="5"
+            card_view:layout_constraintBottom_toBottomOf="@id/img_item_photo"
             card_view:layout_constraintEnd_toEndOf="@+id/tv_movie_name"
-            card_view:layout_constraintStart_toStartOf="@+id/tv_movie_year"
+            card_view:layout_constraintStart_toStartOf="@+id/tv_movie_name"
             card_view:layout_constraintTop_toBottomOf="@+id/tv_movie_duration"
             tools:text="@string/description" />
 
