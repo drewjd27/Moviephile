@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
     <item
-        android:id="@+id/share"
+        android:id="@+id/action_share"
         android:title="@string/about"
         android:icon="@drawable/share"
         app:showAsAction="always"/>

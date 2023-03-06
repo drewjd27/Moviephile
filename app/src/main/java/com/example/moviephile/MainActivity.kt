@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setMode(selectedMode: Int) {
         when (selectedMode) {
-            R.id.about -> {
+            R.id.about_page -> {
                 val about = Intent(this@MainActivity, AboutActivity::class.java)
                 startActivity(about)
             }

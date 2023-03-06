@@ -53,10 +53,10 @@ class DetailActivity : AppCompatActivity(){
 
     private fun setMode(selectedMode: Int) {
         when (selectedMode) {
-            R.id.share -> {
+            R.id.action_share -> {
                 val share = Intent(Intent.ACTION_SEND)
                 share.type = "text/plain"
-                share.putExtra(Intent.EXTRA_TEXT, "Lihat sourcecode Moviephile di sini https://github.com/drewjd27/Moviephile")
+                share.putExtra(Intent.EXTRA_TEXT, "Kunjungi halaman GitHub saya di sini https://github.com/drewjd27")
                 startActivity(Intent.createChooser(share, "Share Link"))
             }
         }
