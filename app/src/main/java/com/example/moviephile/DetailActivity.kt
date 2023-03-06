@@ -39,10 +39,6 @@ class DetailActivity : AppCompatActivity(){
         duration.text = movieDuration
         description.text = movieOverview
         synopsis.text = movieSynopsis
-
-//        favButton.setOnClickListener{
-//            Toast.makeText(this, "Add To Favorite", Toast.LENGTH_SHORT).show()
-//        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
