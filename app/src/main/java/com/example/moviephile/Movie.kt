@@ -9,6 +9,8 @@ data class Movie(
     var year: String = "",
     var country: String = "",
     var duration: String = "",
+    var overview: String = "",
+    var photo: Int = 0,
     var synopsis: String = "",
-    var photo: Int = 0
+    var background: Int = 0
 ) : Parcelable

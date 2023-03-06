@@ -1,7 +1,10 @@
 package com.example.moviephile
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.moviephile.ListMovieAdapter
@@ -18,28 +21,29 @@ class MainActivity : AppCompatActivity() {
         rvMovie = findViewById(R.id.rv_movies)
         rvMovie.setHasFixedSize(true)
 
-        list.addAll(getListMovie())
-        showRecyclerList()
-    }
-
-    private fun getListMovie(): ArrayList<Movie> {
-        val dataName = resources.getStringArray(R.array.data_movie_name)
-        val dataYear = resources.getStringArray(R.array.data_movie_year)
-        val dataCountry = resources.getStringArray(R.array.data_movie_country)
-        val dataDuration = resources.getStringArray(R.array.data_movie_duration)
-        val dataDescription = resources.getStringArray(R.array.data_movie_description)
-        val dataPhoto = resources.obtainTypedArray(R.array.data_movie_photo)
-        val listMovie = ArrayList<Movie>()
-        for (i in dataName.indices) {
-            val movie = Movie(dataName[i], dataYear[i], dataCountry[i], dataDuration[i], dataDescription[i], dataPhoto.getResourceId(i, -1))
-            listMovie.add(movie)
-        }
-        return  listMovie
-    }
-
-    private fun showRecyclerList() {
+        list.addAll(MovieData.listData)
         rvMovie.layoutManager = LinearLayoutManager(this)
-        val listMovieAdapter = ListMovieAdapter(list)
+
+        val listMovieAdapter = ListMovieAdapter(list, this)
         rvMovie.adapter = listMovieAdapter
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        setMode(item.itemId)
+        return super.onOptionsItemSelected(item)
+    }
+
+    private fun setMode(selectedMode: Int) {
+        when (selectedMode) {
+            R.id.about -> {
+//                val about = Intent(this@MainActivity, AboutActivity::class.java)
+//                startActivity(about)
+            }
+        }
     }
 }

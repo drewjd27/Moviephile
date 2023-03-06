@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_item_bg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/notimetodie_bg" />
+
+        <ImageView
+            android:id="@+id/img_item_photo"
+            android:layout_width="126dp"
+            android:layout_height="210dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_item_bg"
+            tools:src="@drawable/notimetodie" />
+
+        <TextView
+            android:id="@+id/tv_movie_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toEndOf="@id/img_item_photo"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_item_photo"
+            app:layout_constraintTop_toTopOf="@+id/img_item_photo"
+            tools:text="@string/movie_name" />
+
+        <TextView
+            android:id="@+id/tv_movie_year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/img_item_photo"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/img_item_photo"
+            app:layout_constraintTop_toBottomOf="@+id/tv_movie_name"
+            tools:text="@string/movie_year" />
+
+        <TextView
+            android:id="@+id/tv_movie_country"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/img_item_photo"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/tv_movie_year"
+            app:layout_constraintTop_toBottomOf="@+id/tv_movie_name"
+            tools:text="@string/movie_country" />
+
+        <TextView
+            android:id="@+id/tv_movie_duration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/img_item_photo"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_movie_name"
+            app:layout_constraintStart_toEndOf="@+id/tv_movie_country"
+            app:layout_constraintTop_toBottomOf="@+id/tv_movie_name"
+            tools:text="@string/movie_duration" />
+
+        <TextView
+            android:id="@+id/tv_movie_description"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins"
+            android:maxLines="7"
+            app:layout_constraintBottom_toBottomOf="@+id/img_item_photo"
+            app:layout_constraintEnd_toEndOf="@+id/tv_movie_name"
+            app:layout_constraintStart_toStartOf="@+id/tv_movie_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_movie_duration"
+            tools:text="@string/description" />
+
+<!--        <include-->
+<!--            android:id="@id/sinopsis"-->
+<!--            layout="@layout/layout_synopsis"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/tv_movie_description"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/img_item_photo"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/img_item_photo" />-->
+
+        <TextView
+            android:id="@+id/sinop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/img_item_photo"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/synopsis"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_movie_synopsis"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_item_photo" />
+
+        <TextView
+            android:id="@+id/tv_movie_synopsis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/poppins"
+            android:justificationMode="inter_word"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sinop"
+            tools:text="@string/description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+

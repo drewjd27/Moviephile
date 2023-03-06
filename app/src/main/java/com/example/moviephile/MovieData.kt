@@ -54,6 +54,32 @@ object MovieData {
         "97 Minutes"
     )
 
+    private val movieOverview = arrayOf(
+        "This time, the people of Wakanda will fight to protect their country from interference from world powers after the death of King T\'Challa.",
+        "Yuta Okkotsu is a loner high school student in deep trouble-his childhood friend Rika has become a cursed spirit that refuses to let go of him.",
+        "Four years after the destruction of the island of Nublar, dinosaurs now live and hunt alongside humans around the world.",
+        "When renowned crime novelist Harlan Thrombey is found dead on his estate just after his 85th birthday, the inquisitive and mysteriously debonair Detective Benoit Blanc is asked to investigate.",
+        "When an IMF mission ends badly, the world is faced with dire consequences.",
+        "James Bond has retired and is living the high life in Jamaica. But all that is interrupted when his old friend Felix Leiter from the CIA shows up and asks for his help.",
+        "Spider-Man traverses parallel dimensions and teams up with Spider-Men from those dimensions to stop a threat to all realities.",
+        "Spider-Man\'s identity is now revealed, and Peter enlists the help of Doctor Strange. But a mistake is made, and it invites dangerous enemies from another world, they begin to appear.",
+        "Over 30 years of service as one of the Navy\'s finest aviators, Pete Maverick Mitchell was in his dream position, performing ground-breaking stunts as a daring test pilot.",
+        "Venom returns to action when serial killer Cletus Kasady transforms into the evil Carnage."
+    )
+
+    private val moviePhoto = arrayOf(
+        R.drawable.blackpanther_wf,
+        R.drawable.jujutsukaisen_0,
+        R.drawable.jurassicparkdominion,
+        R.drawable.knivesout,
+        R.drawable.missionimpossible_fallout,
+        R.drawable.notimetodie,
+        R.drawable.spiderman_its,
+        R.drawable.spiderman_nwh,
+        R.drawable.topgun_m,
+        R.drawable.venom2
+    )
+
     private val movieSynopsis = arrayOf(
         "T'Challa, king of Wakanda, is dying from an unspecified terminal illness which his sister Shuri believes can be cured by the \"heart-shaped herb\". Shuri attempts to synthetically recreate the herb after it was destroyed by Erik Killmonger,[a] but fails to do so before T'Challa dies.\n" +
                 "\n" +
@@ -176,17 +202,17 @@ object MovieData {
                 "Brock and Venom arrive to fight Carnage while Barrison seemingly kills Mulligan by hanging him with a chain. Venom is overpowered by Carnage but provokes Barrison into using her powers to separate Carnage and Kasady. Venom devours Carnage and kills Kasady while the collapsing cathedral crushes Barrison. Later, an alive Mulligan's eyes flash blue, revealing that he somehow absorbed a part of Carnage.[a] Brock and Venom, now fugitives, decide to take a vacation while they ponder their next steps. In a mid-credit scene, as Venom tells Brock about the symbiotes' knowledge of other universes, a blinding light transports them from their hotel room to another room where they watch J. Jonah Jameson talking about Spider-Man's revealed identity as Peter Parker on television. Venom then licks the screen after saying, \"That guy.\""
     )
 
-    private val  moviePhoto = arrayOf(
-        R.drawable.blackpanther_wf,
-        R.drawable.jujutsukaisen_0,
-        R.drawable.jurassicparkdominion,
-        R.drawable.knivesout,
-        R.drawable.missionimpossible_fallout,
-        R.drawable.notimetodie,
-        R.drawable.spiderman_its,
-        R.drawable.spiderman_nwh,
-        R.drawable.topgun_m,
-        R.drawable.venom2
+    private val movieBackground = arrayOf(
+        R.drawable.blackpanther_bg,
+        R.drawable.jjk0_bg,
+        R.drawable.jurassicworld_bg,
+        R.drawable.knivesout_bg,
+        R.drawable.impossible_bg,
+        R.drawable.notimetodie_bg,
+        R.drawable.spiderverse_bg,
+        R.drawable.spidermannwh_bg,
+        R.drawable.topgun_bg,
+        R.drawable.venom_bg
     )
 
     val listData: ArrayList<Movie>
@@ -200,6 +226,8 @@ object MovieData {
                 movie.duration = movieDuration[position]
                 movie.synopsis = movieSynopsis[position]
                 movie.photo = moviePhoto[position]
+                movie.overview = movieOverview[position]
+                movie.background = movieBackground[position]
                 list.add(movie)
             }
             return list
