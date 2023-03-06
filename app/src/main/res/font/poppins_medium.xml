@@ -3,9 +3,9 @@
     <font
         android:fontStyle="normal"
         android:fontWeight="500"
-        android:font="@font/PoppinsMedium"/>
+        android:font="@font/poppinsmedium"/>
     <font
         android:fontStyle="italic"
         android:fontWeight="500"
-        android:font="@font/PoppinsMediumItalic"/>
+        android:font="@font/poppinsmediumitalic"/>
 </font-family>
