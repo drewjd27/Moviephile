@@ -7,8 +7,6 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.moviephile.ListMovieAdapter
-import com.example.moviephile.Movie
 
 class MainActivity : AppCompatActivity() {
     private lateinit var rvMovie: RecyclerView
