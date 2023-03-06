@@ -24,12 +24,12 @@
         <item>This time, the people of Wakanda will fight to protect their country from interference from world powers after the death of King T\'Challa.</item>
         <item>Yuta Okkotsu is a loner high school student in deep trouble-his childhood friend Rika has become a cursed spirit that refuses to let go of him.</item>
         <item>Four years after the destruction of the island of Nublar, dinosaurs now live and hunt alongside humans around the world. This delicate balance will determine whether humans will remain at the top of the food chain while sharing territory with the most fearsome creatures in Earth\'s history.</item>
-        <item>When renowned crime novelist Harlan Thrombey is found dead on his estate just after his 85th birthday, the inquisitive and mysteriously debonair Detective Benoit Blanc is asked to investigate. From Harlan\'s dysfunctional family to his loyal staff, Blanc sifts through a self-serving web of distractions and lies to uncover the truth behind Harlan's untimely death.</item>
+        <item>When renowned crime novelist Harlan Thrombey is found dead on his estate just after his 85th birthday, the inquisitive and mysteriously debonair Detective Benoit Blanc is asked to investigate. From Harlan\'s dysfunctional family to his loyal staff, Blanc sifts through a self-serving web of distractions and lies to uncover the truth behind Harlan\'s untimely death.</item>
         <item>When an IMF mission ends badly, the world is faced with dire consequences. As Ethan Hunt takes matters into his own hands to fulfill his original brief, the CIA begins to question his loyalty and motives. The IMF team find themselves in a race against time, hunted by assassins while trying to prevent a global catastrophe.</item>
         <item>James Bond has retired and is living the high life in Jamaica. But all that is interrupted when his old friend Felix Leiter from the CIA shows up and asks for his help. The mission to rescue a kidnapped scientist turns out to be riskier than expected, leading Bond on the trail of a mysterious villain armed with deadly new technology.</item>
         <item>Spider-Man traverses parallel dimensions and teams up with Spider-Men from those dimensions to stop a threat to all realities.</item>
         <item>Spider-Man\'s identity is now revealed, and Peter enlists the help of Doctor Strange. But a mistake is made, and it invites dangerous enemies from another world, they begin to appear. This forces Peter to search for what it really means to be Spider-Man.</item>
-        <item>Over 30 years of service as one of the Navy\'s finest aviators, Pete "Maverick" Mitchell was in his dream position, performing ground-breaking stunts as a daring test pilot, and turning down any chance of promotion because it would keep him from flying his plane.</item>
+        <item>Over 30 years of service as one of the Navy\'s finest aviators, Pete Maverick Mitchell was in his dream position, performing ground-breaking stunts as a daring test pilot, and turning down any chance of promotion because it would keep him from flying his plane.</item>
         <item>Venom returns to action when serial killer Cletus Kasady transforms into the evil Carnage.</item>
     </string-array>
 
@@ -76,12 +76,12 @@
         <item>@drawable/blackpanther_wf</item>
         <item>@drawable/jujutsukaisen_0</item>
         <item>@drawable/jurassicparkdominion</item>
-        <item>@drawable/knivesOut</item>
+        <item>@drawable/knivesout</item>
         <item>@drawable/missionimpossible_fallout</item>
         <item>@drawable/notimetodie</item>
         <item>@drawable/spiderman_its</item>
         <item>@drawable/spiderman_nwh</item>
-        <item>@drawable/topGun_M</item>
+        <item>@drawable/topgun_m</item>
         <item>@drawable/venom2</item>
     </integer-array>
 
