@@ -41,8 +41,8 @@ class MainActivity : AppCompatActivity() {
     private fun setMode(selectedMode: Int) {
         when (selectedMode) {
             R.id.about -> {
-//                val about = Intent(this@MainActivity, AboutActivity::class.java)
-//                startActivity(about)
+                val about = Intent(this@MainActivity, AboutActivity::class.java)
+                startActivity(about)
             }
         }
     }

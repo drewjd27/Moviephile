@@ -2,11 +2,10 @@ package com.example.moviephile
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class DetailActivity : AppCompatActivity(){
@@ -46,4 +45,24 @@ class DetailActivity : AppCompatActivity(){
 //        }
     }
 
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_detail, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        setMode(item.itemId)
+        return super.onOptionsItemSelected(item)
+    }
+
+    private fun setMode(selectedMode: Int) {
+        when (selectedMode) {
+            R.id.share -> {
+                val share = Intent(Intent.ACTION_SEND)
+                share.type = "text/plain"
+                share.putExtra(Intent.EXTRA_TEXT, "Lihat sourcecode Moviephile di sini https://github.com/drewjd27/Moviephile")
+                startActivity(Intent.createChooser(share, "Share Link"))
+            }
+        }
+    }
 }

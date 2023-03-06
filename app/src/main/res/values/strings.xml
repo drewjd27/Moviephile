@@ -8,6 +8,10 @@
     <string name="movie_country">US</string>
     <string name="synopsis">Synopsis</string>
     <string name="about">About</string>
+    <string name="share">Share</string>
+
+    <string name="profile_name">Andrew Jonatan Damanik</string>
+    <string name="profile_email">andrewdamanik23@gmail.com</string>
 
     <string-array name="data_movie_name">
         <item>Black Panther: Wakanda Forever</item>
