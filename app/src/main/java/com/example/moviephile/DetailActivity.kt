@@ -56,8 +56,9 @@ class DetailActivity : AppCompatActivity(){
             R.id.action_share -> {
                 val share = Intent(Intent.ACTION_SEND)
                 share.type = "text/plain"
-                share.putExtra(Intent.EXTRA_TEXT, "Kunjungi halaman GitHub saya di sini https://github.com/drewjd27")
-                startActivity(Intent.createChooser(share, "Share Link"))
+                val message = "${intent.getStringExtra("movName")}\n\n${intent.getStringExtra("movOverview")}"
+                share.putExtra(Intent.EXTRA_TEXT, message)
+                startActivity(Intent.createChooser(share, "Share Movie"))
             }
         }
     }
